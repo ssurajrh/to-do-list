@@ -2,6 +2,21 @@ const express=require("express");
 const app=express();
 const bodyParser=require("body-parser");
 const date=require(__dirname+"/date.js");
+const mongoose=require("mongoose")
+const api=require(__dirname+"/config.js")
+const uid=api.uidd
+const pwd=api.pswd
+
+const dbUrl = "mongodb+srv://"+uid+":"+pwd+"@cluster38817.tfmkybi.mongodb.net/fruitsDB?retryWrites=true&w=majority"
+
+const connectionParams={
+  useNewUrlParser:true,
+  useUNifiedTopology:true
+}
+
+mongoose.connect(dbUrl,connectionParams)
+
+
 
 
 app.use(bodyParser.urlencoded({extended:true}));
