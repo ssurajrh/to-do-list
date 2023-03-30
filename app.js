@@ -7,7 +7,7 @@ const _=require("lodash")
 const api=require(__dirname+"/config.js")
 const uid=api.uidd
 const pwd=api.pswd
-const dbUrl = "mongodb+srv://"+uid+":"+pwd+"@cluster38817.tfmkybi.mongodb.net/toDoListDB?retryWrites=true&w=majority"
+const dbUrl = "mongodb+srv://Cluster38817:Z6F3nMnX0NubjbBE@cluster38817.tfmkybi.mongodb.net/toDoListDB?retryWrites=true&w=majority"
 const connectionParams={
   useNewUrlParser:true,
   useUNifiedTopology:true
