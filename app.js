@@ -4,9 +4,6 @@ const bodyParser=require("body-parser");
 const date=require(__dirname+"/date.js");
 const mongoose=require("mongoose")
 const _=require("lodash")
-const api=require(__dirname+"/config.js")
-const uid=api.uidd
-const pwd=api.pswd
 const dbUrl = "mongodb+srv://Cluster38817:Z6F3nMnX0NubjbBE@cluster38817.tfmkybi.mongodb.net/toDoListDB?retryWrites=true&w=majority"
 const connectionParams={
   useNewUrlParser:true,
