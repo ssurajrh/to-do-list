@@ -18,7 +18,7 @@ app.set('view engine','ejs');
 const itemSchema=new mongoose.Schema({
   data:{
     type:String,
-    minlength:1 
+    minlength:1
   }
 });
 const itemListModel=mongoose.model("item",itemSchema);
